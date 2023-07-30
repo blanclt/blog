@@ -1,0 +1,22 @@
+@mixin button {
+  font-size: 17px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 550;
+}
+.movies {
+  color: var(--orance-color);
+  background: #ffefef;
+  @include button();
+}
+
+.coding {
+  color: var(--green-color);
+  background-color: #eaf9f3;
+  @include button();
+}
+.games {
+  color: var(--blue-color);
+  background-color: #dde8f8;
+  @include button();
+}

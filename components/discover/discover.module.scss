@@ -1,0 +1,28 @@
+.discover {
+  background: #ffefef;
+  margin: 6rem 0;
+  padding: 5rem 3rem;
+
+  .title {
+    font-size: 4.5rem;
+    color: var(--orance-color);
+    font-weight: 600;
+  }
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .discover {
+    padding: 5rem 6rem;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 60px;
+  }
+}

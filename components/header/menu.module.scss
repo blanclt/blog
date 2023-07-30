@@ -1,0 +1,155 @@
+.menu {
+  animation: menu-up linear 0.3s;
+  transition: all 0.3s linear;
+}
+
+.link {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.about {
+  position: relative;
+  cursor: pointer;
+
+  .about-icon {
+    font-size: 2.4rem;
+  }
+  .sub-about {
+    margin-left: 1.5rem;
+    padding-left: 0.6rem;
+    border-left: 1px solid #fff;
+    display: none;
+    animation: menu-up linear 0.6s;
+    transition: all 0.2s linear;
+    li {
+      padding: 6px 10px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+  &:hover .sub-about {
+    display: block;
+  }
+}
+.guides {
+  .guides-icon {
+    font-size: 2.4rem;
+  }
+
+  .sub-guides {
+    margin-left: 1.5rem;
+    padding-left: 0.6rem;
+    border-left: 1px solid #fff;
+    display: none;
+    animation: menu-up linear 0.6s;
+    transition: all 0.2s linear;
+
+    li {
+      padding: 6px 10px;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  &:hover .sub-guides {
+    display: block;
+  }
+}
+.android {
+  .android-link {
+    display: flex;
+    align-items: center;
+  }
+  .android-icon {
+    font-size: 2.4rem;
+  }
+  .sub-android {
+    margin-left: 1.5rem;
+    padding-left: 0.6rem;
+    border-left: 1px solid #fff;
+    display: none;
+    animation: menu-up linear 0.6s;
+    transition: all 0.2s linear;
+  }
+  &:hover .sub-android {
+    display: block;
+  }
+}
+.ios {
+  .ios-link {
+    display: flex;
+    align-items: center;
+  }
+  .ios-icon {
+    font-size: 2.4rem;
+  }
+  .sub-ios {
+    margin-left: 1.5rem;
+    padding-left: 0.6rem;
+    border-left: 1px solid #fff;
+    display: none;
+    animation: menu-up linear 0.6s;
+    transition: all 0.2s linear;
+  }
+  &:hover .sub-ios {
+    display: block;
+  }
+}
+.design {
+  .design-icon {
+    font-size: 2.4rem;
+  }
+  .sub-design {
+    margin-left: 1.5rem;
+    padding-left: 0.6rem;
+    border-left: 1px solid #fff;
+    display: none;
+    animation: menu-up linear 0.6s;
+    transition: all 0.2s linear;
+    li {
+      padding: 6px 10px;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  &:hover .sub-design {
+    display: block;
+  }
+}
+.home,
+.design,
+.about,
+.guides,
+.shop {
+  margin-bottom: 2rem;
+}
+.about-link,
+.guides-link,
+.design-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button {
+  font-size: 1.7rem;
+  padding: 6px 12px;
+  background-color: #4c48ff;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes menu-up {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
